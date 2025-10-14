@@ -116,7 +116,13 @@ You can follow the steps below to get up and running with Llama 3 models quickly
 ```
 The launcher script will guide you through choosing an app and configuring settings. See [LAUNCH.md](LAUNCH.md) for details.
 
-**Option B: Manual Launch**
+**Option B: Literal Launch (Zero Configuration) 🚀**
+```bash
+./literally_launch.sh
+```
+Launches immediately with no questions - perfect for quick demos!
+
+**Option C: Manual Launch**
 ```bash
 torchrun --nproc_per_node 1 example_chat_completion.py \
     --ckpt_dir Meta-Llama-3-8B-Instruct/ \
