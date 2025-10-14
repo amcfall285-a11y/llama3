@@ -50,6 +50,27 @@ We've created comprehensive tutorials to help you build your first app:
 - `example_chat_completion.py` - Official chat examples
 - `example_text_completion.py` - Official text completion examples
 
+**Helper Tools:**
+- `launch_app.sh` - Interactive launcher that handles setup and runs apps
+- `verify_setup.py` - Verify your environment is properly configured
+- **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Comprehensive troubleshooting guide
+
+## Quick Start
+
+```bash
+# 1. Verify your setup
+python3 verify_setup.py
+
+# 2. If dependencies are missing, install them
+pip install -e .
+
+# 3. Download the model (if not already done)
+./download.sh
+
+# 4. Launch an app
+./launch_app.sh
+```
+
 ## Download
 
 To download the model weights and tokenizer, please visit the [Meta Llama website](https://llama.meta.com/llama-downloads/) and accept our License.
