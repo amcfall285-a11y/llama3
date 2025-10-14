@@ -32,8 +32,11 @@ This repository is a minimal example of loading Llama 3 models and running infer
 
 ## 📚 Getting Started Guides
 
-**New to Llama 3?** We've created comprehensive tutorials to help you build your first app:
+**New to Llama 3?** Start here: **[GETTING_STARTED.md](GETTING_STARTED.md)** 🎯
 
+We've created comprehensive tutorials to help you build your first app:
+
+- 🎯 **[Getting Started](GETTING_STARTED.md)** - Navigate all tutorials and choose your path
 - 🚀 **[Quick Start Guide](QUICKSTART.md)** - Get up and running in 5 minutes
 - 📖 **[Full Tutorial](TUTORIAL.md)** - Comprehensive step-by-step guide to building apps
 - 📝 **[Examples Guide](EXAMPLES.md)** - Overview of all example applications
