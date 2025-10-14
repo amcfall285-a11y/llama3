@@ -52,8 +52,11 @@ echo ""
 echo "4. Text Completion Example (example_text_completion.py)"
 echo "   - Complete text prompts"
 echo ""
+echo "5. The Hemp Seed Web App (hemp_seed_app.py)"
+echo "   - AI-powered web app for The Hemp Seed business"
+echo ""
 
-read -p "Enter your choice (1-4): " choice
+read -p "Enter your choice (1-5): " choice
 
 # Default model paths - user can override
 DEFAULT_CKPT_DIR="Meta-Llama-3-8B-Instruct/"
@@ -126,6 +129,21 @@ case $choice in
             --tokenizer_path "$TOKENIZER_PATH" \
             --max_seq_len 128 \
             --max_batch_size 4
+        ;;
+    5)
+        read -p "Port number [5000]: " PORT
+        PORT=${PORT:-5000}
+        echo ""
+        echo "🌿 Starting The Hemp Seed web application..."
+        echo ""
+        echo "Running: python hemp_seed_app.py --ckpt_dir $CKPT_DIR --tokenizer_path $TOKENIZER_PATH --port $PORT"
+        echo ""
+        echo "After the server starts, open your browser to: http://127.0.0.1:$PORT"
+        echo ""
+        python hemp_seed_app.py \
+            --ckpt_dir "$CKPT_DIR" \
+            --tokenizer_path "$TOKENIZER_PATH" \
+            --port "$PORT"
         ;;
     *)
         echo "❌ Invalid choice"

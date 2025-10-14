@@ -46,6 +46,7 @@ We've created comprehensive tutorials to help you build your first app:
 **Example Applications:**
 - `my_first_app.py` - Simple story generator
 - `interactive_chatbot.py` - Interactive chatbot with conversation history
+- `hemp_seed_app.py` - 🌿 **The Hemp Seed** - AI-powered business web application (see [HEMP_SEED_README.md](HEMP_SEED_README.md))
 - `example_chat_completion.py` - Official chat examples
 - `example_text_completion.py` - Official text completion examples
 
