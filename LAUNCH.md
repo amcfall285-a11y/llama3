@@ -2,6 +2,20 @@
 
 This guide will help you launch your Llama 3 application quickly and easily.
 
+## 🆘 Having Trouble? Start Here!
+
+If you're having issues launching the app, use these tools first:
+
+```bash
+# Check your setup automatically
+./check_setup.sh
+
+# Test installation without model files
+python3 test_installation.py
+```
+
+**Still stuck?** Read [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for solutions to common problems.
+
 ## Quick Launch (Recommended)
 
 We've created a simple launcher script that handles everything for you:
