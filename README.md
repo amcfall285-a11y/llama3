@@ -53,6 +53,7 @@ We've created comprehensive tutorials to help you build your first app:
 **Helper Tools:**
 - `launch_app.sh` - Interactive launcher that handles setup and runs apps
 - `verify_setup.py` - Verify your environment is properly configured
+- **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Comprehensive troubleshooting guide
 
 ## Quick Start
 

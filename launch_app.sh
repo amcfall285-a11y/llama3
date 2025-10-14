@@ -190,7 +190,8 @@ handle_launch_error() {
     echo "  • Model not found: Verify model path and files are complete"
     echo "  • Import errors: Reinstall dependencies with: pip install -e ."
     echo ""
-    echo "For more help, see LAUNCH.md and TROUBLESHOOTING section"
+    echo "📖 For detailed help, see: TROUBLESHOOTING.md"
+    echo "🔧 Or run: python3 verify_setup.py"
     exit $exit_code
 }
 

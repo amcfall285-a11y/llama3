@@ -166,9 +166,11 @@ Interactive Chatbot specific:
 
 ## Need More Help?
 
+- 🔧 **[Troubleshooting Guide](TROUBLESHOOTING.md)** - Comprehensive solutions for common issues
 - 📖 Full Tutorial: [TUTORIAL.md](TUTORIAL.md)
 - 🚀 Quick Start: [QUICKSTART.md](QUICKSTART.md)
 - 📚 Main Documentation: [README.md](README.md)
 - 💡 Examples: [EXAMPLES.md](EXAMPLES.md)
+- 🛠️ Setup Verification: Run `python3 verify_setup.py`
 
 Happy coding! 🎉
