@@ -32,13 +32,18 @@ This repository is a minimal example of loading Llama 3 models and running infer
 
 ## 📚 Getting Started Guides
 
-**New to Llama 3?** We've created step-by-step tutorials to help you build your first app:
+**New to Llama 3?** We've created comprehensive tutorials to help you build your first app:
 
-- **[Quick Start Guide](QUICKSTART.md)** - Get up and running in 5 minutes
-- **[Full Tutorial](TUTORIAL.md)** - Comprehensive guide to building apps with Llama 3
-- **Example Apps**:
-  - `my_first_app.py` - Simple story generator
-  - `interactive_chatbot.py` - Interactive chatbot with conversation history
+- 🚀 **[Quick Start Guide](QUICKSTART.md)** - Get up and running in 5 minutes
+- 📖 **[Full Tutorial](TUTORIAL.md)** - Comprehensive step-by-step guide to building apps
+- 📝 **[Examples Guide](EXAMPLES.md)** - Overview of all example applications
+- 🔧 **[Code Cheatsheet](CHEATSHEET.md)** - Quick reference for common patterns
+
+**Example Applications:**
+- `my_first_app.py` - Simple story generator
+- `interactive_chatbot.py` - Interactive chatbot with conversation history
+- `example_chat_completion.py` - Official chat examples
+- `example_text_completion.py` - Official text completion examples
 
 ## Download
 
