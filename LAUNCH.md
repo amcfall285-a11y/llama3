@@ -145,5 +145,6 @@ Interactive Chatbot specific:
 - 🚀 Quick Start: [QUICKSTART.md](QUICKSTART.md)
 - 📚 Main Documentation: [README.md](README.md)
 - 💡 Examples: [EXAMPLES.md](EXAMPLES.md)
+- 🎯 Launch Methods Comparison: [LAUNCH_COMPARISON.md](LAUNCH_COMPARISON.md)
 
 Happy coding! 🎉

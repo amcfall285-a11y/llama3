@@ -62,6 +62,8 @@ For experienced developers:
 |----------|---------|------|----------|
 | **[FAQ.md](FAQ.md)** | Quick answers | 2 min | Common questions |
 | **[QUICKSTART.md](QUICKSTART.md)** | Fast setup | 5 min | Getting running quickly |
+| **[LAUNCH.md](LAUNCH.md)** | Launch guide | 5 min | Running your apps |
+| **[LAUNCH_COMPARISON.md](LAUNCH_COMPARISON.md)** | Launch methods | 3 min | Choosing launch method |
 | **[TUTORIAL.md](TUTORIAL.md)** | Complete guide | 30 min | Understanding concepts |
 | **[EXAMPLES.md](EXAMPLES.md)** | Example overview | 10 min | Exploring possibilities |
 | **[CHEATSHEET.md](CHEATSHEET.md)** | Code reference | 5 min | Quick lookup |
