@@ -2,6 +2,28 @@
 
 Welcome! This guide will help you navigate all the resources available for building apps with Llama 3.
 
+## ⚡ Quick Launch (Can't Get Started?)
+
+**If you're having trouble, use the new quick launch tool:**
+
+```bash
+./quick_launch.sh
+```
+
+This ONE command handles everything:
+- ✅ Checks your setup
+- ✅ Installs dependencies
+- ✅ Tests your installation
+- ✅ Guides you through downloading models
+- ✅ Launches your chosen app
+
+**Other helpful tools:**
+- `./check_setup.sh` - Diagnose issues
+- `python3 test_installation.py` - Test without models
+- `TROUBLESHOOTING.md` - Solutions to common problems
+
+---
+
 ## 📖 Documentation Overview
 
 We've created a comprehensive set of tutorials and guides to help you at every stage:
@@ -14,8 +36,8 @@ Your Journey:
          │
          ▼
 ┌─────────────────────┐      ┌──────────────────────┐
-│  QUICKSTART.md      │ ───▶ │   TUTORIAL.md        │
-│  (5 minute setup)   │      │   (Full guide)       │
+│  ./quick_launch.sh  │ ───▶ │   TUTORIAL.md        │
+│  (One-command!)     │      │   (Full guide)       │
 └─────────────────────┘      └──────────┬───────────┘
          │                              │
          ▼                              ▼
@@ -32,6 +54,15 @@ Your Journey:
 ```
 
 ## 🎯 Choose Your Path
+
+### Path 0: Absolute Beginner (2 minutes)
+Just want it to work? Use this:
+
+1. Run `./quick_launch.sh` - Handles everything automatically!
+2. Follow the on-screen prompts
+3. Start using the app!
+
+**Stuck?** Use `./check_setup.sh` to diagnose issues.
 
 ### Path 1: Quick Start (5 minutes)
 Perfect if you want to see results fast!
@@ -60,6 +91,9 @@ For experienced developers:
 
 | Document | Purpose | Time | Best For |
 |----------|---------|------|----------|
+| **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** | One-page cheat sheet | 1 min | Quick lookup while working |
+| **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** | Problem solving | 5 min | When things don't work |
+| **[LAUNCH_OPTIONS.md](LAUNCH_OPTIONS.md)** | All launch methods | 5 min | Understanding launch options |
 | **[QUICKSTART.md](QUICKSTART.md)** | Fast setup | 5 min | Getting running quickly |
 | **[TUTORIAL.md](TUTORIAL.md)** | Complete guide | 30 min | Understanding concepts |
 | **[EXAMPLES.md](EXAMPLES.md)** | Example overview | 10 min | Exploring possibilities |
