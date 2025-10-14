@@ -32,17 +32,22 @@ This repository is a minimal example of loading Llama 3 models and running infer
 
 ## 🚀 Need Help Launching? Start Here!
 
-**Easiest way to get started:**
+**The easiest way to get started (just run this):**
 
 ```bash
-# Option 1: Interactive helper (checks setup and guides you)
 python3 launch_helper.py
-
-# Option 2: Direct launcher (menu-driven)
-./launch_app.sh
 ```
 
-See **[LAUNCH_HELP.md](LAUNCH_HELP.md)** for a complete step-by-step guide! 📖
+This interactive helper will:
+- ✅ Check your entire setup
+- ✅ Install dependencies if needed
+- ✅ Guide you through any missing requirements
+- ✅ Launch your app when ready
+
+**Visual step-by-step guide:** [HOW_TO_LAUNCH.md](HOW_TO_LAUNCH.md) 🎯  
+**Complete reference:** [LAUNCH_HELP.md](LAUNCH_HELP.md) 📖
+
+**Already set up?** Just run: `./launch_app.sh`
 
 ## 📚 Getting Started Guides
 
