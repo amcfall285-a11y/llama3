@@ -57,8 +57,16 @@ python hemp_seed_app.py \
     --tokenizer_path Meta-Llama-3-8B-Instruct/tokenizer.model
 ```
 
-### Step 3: Open in Browser
-Go to: **http://127.0.0.1:5000**
+### Step 3: Browser Opens Automatically! 🎉
+The app will **automatically open your browser** to **http://127.0.0.1:5000**
+
+**Don't want auto-open?** Use `--open_browser=False`:
+```bash
+python hemp_seed_app.py \
+    --ckpt_dir Meta-Llama-3-8B-Instruct/ \
+    --tokenizer_path Meta-Llama-3-8B-Instruct/tokenizer.model \
+    --open_browser=False
+```
 
 ## 💬 Try These Example Questions
 
@@ -142,6 +150,11 @@ python hemp_seed_app.py ... --port 8080
 ```bash
 pip install flask
 ```
+
+### "Browser doesn't open automatically"
+- Check if your system has a default browser configured
+- Or manually navigate to: **http://127.0.0.1:5000**
+- Or disable auto-open and open manually: `--open_browser=False`
 
 ### "Port already in use"
 ```bash

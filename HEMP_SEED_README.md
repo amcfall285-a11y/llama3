@@ -71,6 +71,7 @@ Update `launch_app.sh` to include The Hemp Seed app option (see instructions bel
 - `--host` (optional): Host address (default: 127.0.0.1)
 - `--port` (optional): Port number (default: 5000)
 - `--debug` (optional): Enable Flask debug mode (default: False)
+- `--open_browser` (optional): Automatically open browser (default: True)
 
 ### Example Commands
 
@@ -80,6 +81,7 @@ python hemp_seed_app.py \
     --ckpt_dir Meta-Llama-3-8B-Instruct/ \
     --tokenizer_path Meta-Llama-3-8B-Instruct/tokenizer.model
 ```
+*Browser opens automatically!*
 
 **Custom port:**
 ```bash
@@ -87,6 +89,14 @@ python hemp_seed_app.py \
     --ckpt_dir Meta-Llama-3-8B-Instruct/ \
     --tokenizer_path Meta-Llama-3-8B-Instruct/tokenizer.model \
     --port 8080
+```
+
+**Disable auto-open browser:**
+```bash
+python hemp_seed_app.py \
+    --ckpt_dir Meta-Llama-3-8B-Instruct/ \
+    --tokenizer_path Meta-Llama-3-8B-Instruct/tokenizer.model \
+    --open_browser=False
 ```
 
 **Enable public access (use with caution):**
@@ -101,8 +111,8 @@ python hemp_seed_app.py \
 ## Accessing the Application
 
 1. Start the server using one of the methods above
-2. Open your web browser
-3. Navigate to: `http://127.0.0.1:5000` (or your custom host/port)
+2. **Browser opens automatically** - just wait a moment!
+3. If browser doesn't open, manually navigate to: `http://127.0.0.1:5000` (or your custom host/port)
 4. Start chatting with the Hemp Seed AI assistant!
 
 ## Application Structure
