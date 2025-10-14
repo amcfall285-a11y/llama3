@@ -39,6 +39,7 @@ We've created comprehensive tutorials to help you build your first app:
 - 🎯 **[Getting Started](GETTING_STARTED.md)** - Navigate all tutorials and choose your path
 - 🚀 **[Quick Start Guide](QUICKSTART.md)** - Get up and running in 5 minutes
 - 🎬 **[Launch Guide](LAUNCH.md)** - Easy launcher script to run your app
+- ❓ **[FAQ](FAQ.md)** - Frequently asked questions and quick answers
 - 📖 **[Full Tutorial](TUTORIAL.md)** - Comprehensive step-by-step guide to building apps
 - 📝 **[Examples Guide](EXAMPLES.md)** - Overview of all example applications
 - 🔧 **[Code Cheatsheet](CHEATSHEET.md)** - Quick reference for common patterns
