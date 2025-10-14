@@ -63,7 +63,7 @@ Store Information:
 - Location: Organic Market District
 - Hours: Mon-Sat 9am-7pm, Sun 10am-5pm
 - Shipping: Free shipping on orders over $50
-- Contact: info@thehemp seed.com
+- Contact: info@thehempseed.com
 """
 
 
