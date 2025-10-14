@@ -50,18 +50,30 @@ pip install -r requirements.txt
 
 Run the application using one of these methods:
 
-#### Method 1: Direct Python Execution
+#### Method 1: Using the Launcher Script (Recommended)
+
+The launcher script automatically installs Flask if needed and handles all dependencies:
 
 ```bash
+./launch_app.sh
+# Choose option 5: The Hemp Seed Web App
+# Enter port number (or press Enter for default 5000)
+```
+
+#### Method 2: Direct Python Execution
+
+If running directly (without the launcher), ensure Flask is installed first:
+
+```bash
+# Install Flask if not already installed
+pip install flask
+
+# Run the application
 python hemp_seed_app.py \
     --ckpt_dir Meta-Llama-3-8B-Instruct/ \
     --tokenizer_path Meta-Llama-3-8B-Instruct/tokenizer.model \
     --port 5000
 ```
-
-#### Method 2: Using the Launcher Script
-
-Update `launch_app.sh` to include The Hemp Seed app option (see instructions below).
 
 ### Command-Line Arguments
 

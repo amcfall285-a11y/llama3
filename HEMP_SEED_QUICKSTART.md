@@ -36,28 +36,28 @@ The AI knows about:
 
 ## 🚀 How to Launch
 
-### Step 1: Ensure Dependencies
-```bash
-pip install flask
-```
+### Step 1: Launch the App
 
-### Step 2: Launch the App
-
-**Easy Way (Using Launcher):**
+**Easy Way (Using Launcher - Recommended):**
 ```bash
 ./launch_app.sh
 # Choose option 5: The Hemp Seed Web App
 # Press Enter for default port (5000)
 ```
+*Note: The launcher automatically installs Flask if needed!*
 
 **Direct Way:**
 ```bash
+# First, ensure Flask is installed
+pip install flask
+
+# Then run the app
 python hemp_seed_app.py \
     --ckpt_dir Meta-Llama-3-8B-Instruct/ \
     --tokenizer_path Meta-Llama-3-8B-Instruct/tokenizer.model
 ```
 
-### Step 3: Open in Browser
+### Step 2: Open in Browser
 Go to: **http://127.0.0.1:5000**
 
 ## 💬 Try These Example Questions
@@ -139,6 +139,9 @@ python hemp_seed_app.py ... --port 8080
 ## 🆘 Troubleshooting
 
 ### "Flask not found"
+**If using the launcher (./launch_app.sh):** Flask is automatically installed!
+
+**If running directly:**
 ```bash
 pip install flask
 ```

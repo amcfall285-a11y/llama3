@@ -131,6 +131,18 @@ case $choice in
             --max_batch_size 4
         ;;
     5)
+        # Check if Flask is installed (required for web app)
+        if ! python3 -c "import flask" 2>/dev/null; then
+            echo "📦 Flask not found. Installing Flask..."
+            pip install flask || {
+                echo "❌ Failed to install Flask"
+                echo "Please run: pip install flask"
+                exit 1
+            }
+            echo "✅ Flask installed successfully!"
+            echo ""
+        fi
+        
         read -p "Port number [5000]: " PORT
         PORT=${PORT:-5000}
         echo ""
