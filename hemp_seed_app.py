@@ -70,6 +70,12 @@ Store Information:
 def initialize_llama(ckpt_dir: str, tokenizer_path: str, max_seq_len: int = 2048):
     """Initialize the Llama model for the web application."""
     global generator
+    
+    # If tokenizer_path is a directory, append the default tokenizer filename
+    if os.path.isdir(tokenizer_path):
+        tokenizer_path = os.path.join(tokenizer_path, "tokenizer.model")
+        print(f"📝 Detected directory path, using tokenizer: {tokenizer_path}")
+    
     print("🚀 Loading Llama 3 model for The Hemp Seed app...")
     generator = Llama.build(
         ckpt_dir=ckpt_dir,
@@ -220,17 +226,23 @@ def run_server(
     
     Args:
         ckpt_dir: Path to the model checkpoint directory
-        tokenizer_path: Path to the tokenizer model
+        tokenizer_path: Path to the tokenizer model file or directory
+                       (if directory provided, will use tokenizer.model from that directory)
         max_seq_len: Maximum sequence length for the model
         host: Host address to bind the server (default: 127.0.0.1)
         port: Port number to run the server (default: 5000)
         debug: Enable Flask debug mode (default: False)
     
-    Example:
+    Examples:
+        # Using full tokenizer path:
         python hemp_seed_app.py \
             --ckpt_dir Meta-Llama-3-8B-Instruct/ \
-            --tokenizer_path Meta-Llama-3-8B-Instruct/tokenizer.model \
-            --port 5000
+            --tokenizer_path Meta-Llama-3-8B-Instruct/tokenizer.model
+        
+        # Using directory path (will auto-append /tokenizer.model):
+        python hemp_seed_app.py \
+            --ckpt_dir Meta-Llama-3-8B-Instruct/ \
+            --tokenizer_path Meta-Llama-3-8B-Instruct
     """
     # Initialize the Llama model
     initialize_llama(ckpt_dir, tokenizer_path, max_seq_len)
