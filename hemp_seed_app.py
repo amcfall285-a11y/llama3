@@ -16,6 +16,8 @@ import fire
 from llama import Llama
 import secrets
 import os
+import webbrowser
+import threading
 
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(16)
@@ -207,13 +209,41 @@ def products():
     return jsonify(products_list)
 
 
+def open_browser_tab(host: str, port: int, delay: float = 1.5):
+    """
+    Open the web browser to the application URL after a short delay.
+    
+    Args:
+        host: Host address of the server
+        port: Port number of the server
+        delay: Seconds to wait before opening browser (default: 1.5)
+    """
+    def _open():
+        # Wait for the server to start
+        import time
+        time.sleep(delay)
+        
+        # Convert 0.0.0.0 or other non-localhost addresses to localhost for browser
+        browser_host = "127.0.0.1" if host in ["0.0.0.0", ""] else host
+        url = f"http://{browser_host}:{port}"
+        
+        print(f"🌐 Opening browser at {url}...")
+        webbrowser.open(url)
+    
+    # Run in a separate thread to not block the main server
+    thread = threading.Thread(target=_open)
+    thread.daemon = True
+    thread.start()
+
+
 def run_server(
     ckpt_dir: str,
     tokenizer_path: str,
     max_seq_len: int = 2048,
     host: str = "127.0.0.1",
     port: int = 5000,
-    debug: bool = False
+    debug: bool = False,
+    open_browser: bool = True
 ):
     """
     Start The Hemp Seed web application server.
@@ -225,6 +255,7 @@ def run_server(
         host: Host address to bind the server (default: 127.0.0.1)
         port: Port number to run the server (default: 5000)
         debug: Enable Flask debug mode (default: False)
+        open_browser: Automatically open web browser (default: True)
     
     Example:
         python hemp_seed_app.py \
@@ -237,8 +268,15 @@ def run_server(
     
     # Start Flask server
     print(f"🌿 Starting The Hemp Seed web application...")
-    print(f"🌐 Open your browser and navigate to: http://{host}:{port}")
+    print(f"🌐 Server will be available at: http://{host}:{port}")
     print(f"💬 Chat with our AI assistant about hemp seeds and products!")
+    
+    if open_browser:
+        print(f"🚀 Browser will open automatically in a few seconds...")
+        open_browser_tab(host, port)
+    else:
+        print(f"📝 Open your browser manually and navigate to: http://{host}:{port}")
+    
     print(f"\nPress Ctrl+C to stop the server.\n")
     
     app.run(host=host, port=port, debug=debug)
