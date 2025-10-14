@@ -44,8 +44,10 @@ This interactive helper will:
 - ✅ Guide you through any missing requirements
 - ✅ Launch your app when ready
 
-**Visual step-by-step guide:** [HOW_TO_LAUNCH.md](HOW_TO_LAUNCH.md) 🎯  
-**Complete reference:** [LAUNCH_HELP.md](LAUNCH_HELP.md) 📖
+**Quick Reference:**
+- 📋 **[LAUNCH_SUMMARY.md](LAUNCH_SUMMARY.md)** - Quick overview of all launch options
+- 🎯 **[HOW_TO_LAUNCH.md](HOW_TO_LAUNCH.md)** - Visual step-by-step guide with diagrams
+- 📖 **[LAUNCH_HELP.md](LAUNCH_HELP.md)** - Complete troubleshooting reference
 
 **Already set up?** Just run: `./launch_app.sh`
 
