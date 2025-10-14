@@ -2,6 +2,10 @@
 
 This guide will help you launch your Llama 3 application quickly and easily.
 
+> **💡 Quick Answer:** The easiest way to launch an app is: `./launch_app.sh`
+> 
+> See our [FAQ](FAQ.md) for more common questions!
+
 ## Quick Launch (Recommended)
 
 We've created a simple launcher script that handles everything for you:

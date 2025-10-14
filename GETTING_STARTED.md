@@ -60,6 +60,7 @@ For experienced developers:
 
 | Document | Purpose | Time | Best For |
 |----------|---------|------|----------|
+| **[FAQ.md](FAQ.md)** | Quick answers | 2 min | Common questions |
 | **[QUICKSTART.md](QUICKSTART.md)** | Fast setup | 5 min | Getting running quickly |
 | **[TUTORIAL.md](TUTORIAL.md)** | Complete guide | 30 min | Understanding concepts |
 | **[EXAMPLES.md](EXAMPLES.md)** | Example overview | 10 min | Exploring possibilities |
@@ -201,6 +202,7 @@ For more patterns, see [CHEATSHEET.md](CHEATSHEET.md).
 
 ## 📝 Quick Links
 
+- [FAQ](FAQ.md) - Common questions answered
 - [Quick Start](QUICKSTART.md) - 5-minute setup
 - [Full Tutorial](TUTORIAL.md) - Complete guide
 - [Examples](EXAMPLES.md) - Example apps
