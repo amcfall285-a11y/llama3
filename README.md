@@ -39,6 +39,7 @@ We've created comprehensive tutorials to help you build your first app:
 - 🎯 **[Getting Started](GETTING_STARTED.md)** - Navigate all tutorials and choose your path
 - 🚀 **[Quick Start Guide](QUICKSTART.md)** - Get up and running in 5 minutes
 - 🎬 **[Launch Guide](LAUNCH.md)** - Easy launcher script to run your app
+- 🔀 **[Launch Methods Comparison](LAUNCH_COMPARISON.md)** - Compare different ways to launch
 - ❓ **[FAQ](FAQ.md)** - Frequently asked questions and quick answers
 - 📖 **[Full Tutorial](TUTORIAL.md)** - Comprehensive step-by-step guide to building apps
 - 📝 **[Examples Guide](EXAMPLES.md)** - Overview of all example applications
@@ -116,7 +117,13 @@ You can follow the steps below to get up and running with Llama 3 models quickly
 ```
 The launcher script will guide you through choosing an app and configuring settings. See [LAUNCH.md](LAUNCH.md) for details.
 
-**Option B: Manual Launch**
+**Option B: Literal Launch (Zero Configuration) 🚀**
+```bash
+./literally_launch.sh
+```
+Launches immediately with no questions - perfect for quick demos!
+
+**Option C: Manual Launch**
 ```bash
 torchrun --nproc_per_node 1 example_chat_completion.py \
     --ckpt_dir Meta-Llama-3-8B-Instruct/ \
