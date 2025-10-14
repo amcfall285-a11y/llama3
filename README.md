@@ -30,6 +30,27 @@ This release includes model weights and starting code for pre-trained and instru
 
 This repository is a minimal example of loading Llama 3 models and running inference. For more detailed examples, see [llama-cookbook](https://github.com/facebookresearch/llama-recipes/).
 
+## 🚀 Need Help Launching? Start Here!
+
+**The easiest way to get started (just run this):**
+
+```bash
+python3 launch_helper.py
+```
+
+This interactive helper will:
+- ✅ Check your entire setup
+- ✅ Install dependencies if needed
+- ✅ Guide you through any missing requirements
+- ✅ Launch your app when ready
+
+**Quick Reference:**
+- 📋 **[LAUNCH_SUMMARY.md](LAUNCH_SUMMARY.md)** - Quick overview of all launch options
+- 🎯 **[HOW_TO_LAUNCH.md](HOW_TO_LAUNCH.md)** - Visual step-by-step guide with diagrams
+- 📖 **[LAUNCH_HELP.md](LAUNCH_HELP.md)** - Complete troubleshooting reference
+
+**Already set up?** Just run: `./launch_app.sh`
+
 ## 📚 Getting Started Guides
 
 **New to Llama 3?** Start here: **[GETTING_STARTED.md](GETTING_STARTED.md)** 🎯
@@ -37,6 +58,7 @@ This repository is a minimal example of loading Llama 3 models and running infer
 We've created comprehensive tutorials to help you build your first app:
 
 - 🎯 **[Getting Started](GETTING_STARTED.md)** - Navigate all tutorials and choose your path
+- 🆘 **[Launch Help](LAUNCH_HELP.md)** - **NEW!** Quick troubleshooting guide for launching apps
 - 🚀 **[Quick Start Guide](QUICKSTART.md)** - Get up and running in 5 minutes
 - 🎬 **[Launch Guide](LAUNCH.md)** - Easy launcher script to run your app
 - 📖 **[Full Tutorial](TUTORIAL.md)** - Comprehensive step-by-step guide to building apps

@@ -31,14 +31,30 @@ Your Journey:
 └─────────────────────┘
 ```
 
+## 🚀 Need Help Launching? Try These First!
+
+**The easiest way to get started:**
+
+```bash
+python3 launch_helper.py
+```
+
+This interactive tool checks your setup and guides you through everything!
+
+**Visual Guide:** [HOW_TO_LAUNCH.md](HOW_TO_LAUNCH.md) - See the complete launch process with diagrams 🎯  
+**Complete Reference:** [LAUNCH_HELP.md](LAUNCH_HELP.md) - Detailed troubleshooting and options 📖
+
+**Alternative:** If everything is already set up, run `./launch_app.sh` for quick access.
+
 ## 🎯 Choose Your Path
 
 ### Path 1: Quick Start (5 minutes)
 Perfect if you want to see results fast!
 
-1. **[QUICKSTART.md](QUICKSTART.md)** - Installation and first run
-2. Run `my_first_app.py` or `interactive_chatbot.py`
-3. Start experimenting!
+1. **[HOW_TO_LAUNCH.md](HOW_TO_LAUNCH.md)** - **START HERE!** Visual guide with 3 simple steps
+2. Run: `python3 launch_helper.py` (it does everything for you!)
+3. Choose an app from the menu
+4. Start experimenting!
 
 ### Path 2: Learning Path (30 minutes)
 Best for understanding how everything works:
@@ -60,10 +76,13 @@ For experienced developers:
 
 | Document | Purpose | Time | Best For |
 |----------|---------|------|----------|
-| **[QUICKSTART.md](QUICKSTART.md)** | Fast setup | 5 min | Getting running quickly |
+| **[HOW_TO_LAUNCH.md](HOW_TO_LAUNCH.md)** | Visual launch guide | 2 min | **NEW USERS - Start here!** |
+| **[LAUNCH_HELP.md](LAUNCH_HELP.md)** | Launch reference | 3 min | Troubleshooting & details |
+| **[QUICKSTART.md](QUICKSTART.md)** | Fast setup | 5 min | Quick setup guide |
 | **[TUTORIAL.md](TUTORIAL.md)** | Complete guide | 30 min | Understanding concepts |
 | **[EXAMPLES.md](EXAMPLES.md)** | Example overview | 10 min | Exploring possibilities |
 | **[CHEATSHEET.md](CHEATSHEET.md)** | Code reference | 5 min | Quick lookup |
+| **[LAUNCH.md](LAUNCH.md)** | Launcher details | 5 min | Manual launch options |
 
 ## 🔨 Example Applications
 
