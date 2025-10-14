@@ -30,6 +30,16 @@ This release includes model weights and starting code for pre-trained and instru
 
 This repository is a minimal example of loading Llama 3 models and running inference. For more detailed examples, see [llama-cookbook](https://github.com/facebookresearch/llama-recipes/).
 
+## 📚 Getting Started Guides
+
+**New to Llama 3?** We've created step-by-step tutorials to help you build your first app:
+
+- **[Quick Start Guide](QUICKSTART.md)** - Get up and running in 5 minutes
+- **[Full Tutorial](TUTORIAL.md)** - Comprehensive guide to building apps with Llama 3
+- **Example Apps**:
+  - `my_first_app.py` - Simple story generator
+  - `interactive_chatbot.py` - Interactive chatbot with conversation history
+
 ## Download
 
 To download the model weights and tokenizer, please visit the [Meta Llama website](https://llama.meta.com/llama-downloads/) and accept our License.
