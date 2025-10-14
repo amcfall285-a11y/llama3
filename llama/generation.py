@@ -47,7 +47,8 @@ class Llama:
 
         Args:
             ckpt_dir (str): Path to the directory containing checkpoint files.
-            tokenizer_path (str): Path to the tokenizer file.
+            tokenizer_path (str): Path to the tokenizer file or directory containing tokenizer.model.
+                If a directory is provided, '/tokenizer.model' will be automatically appended.
             max_seq_len (int): Maximum sequence length for input text.
             max_batch_size (int): Maximum batch size for inference.
             model_parallel_size (Optional[int], optional): Number of model parallel processes.
@@ -66,6 +67,11 @@ class Llama:
         """
         assert 1 <= max_seq_len <= 8192, f"max_seq_len must be between 1 and 8192, got {max_seq_len}."
         assert os.path.isdir(ckpt_dir), f"Checkpoint directory '{ckpt_dir}' does not exist."
+        
+        # If tokenizer_path is a directory, append /tokenizer.model
+        if os.path.isdir(tokenizer_path):
+            tokenizer_path = os.path.join(tokenizer_path, "tokenizer.model")
+        
         assert os.path.isfile(tokenizer_path), f"Tokenizer file '{tokenizer_path}' does not exist."
         
         if not torch.distributed.is_initialized():

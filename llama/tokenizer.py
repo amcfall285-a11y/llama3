@@ -51,8 +51,12 @@ class Tokenizer:
         Initializes the Tokenizer with a Tiktoken model.
 
         Args:
-            model_path (str): The path to the Tiktoken model file.
+            model_path (str): The path to the Tiktoken model file or directory containing tokenizer.model.
         """
+        # If model_path is a directory, append /tokenizer.model
+        if os.path.isdir(model_path):
+            model_path = os.path.join(model_path, "tokenizer.model")
+        
         assert os.path.isfile(model_path), model_path
 
         mergeable_ranks = load_tiktoken_bpe(model_path)

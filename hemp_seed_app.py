@@ -220,13 +220,20 @@ def run_server(
     
     Args:
         ckpt_dir: Path to the model checkpoint directory
-        tokenizer_path: Path to the tokenizer model
+        tokenizer_path: Path to the tokenizer model file or directory.
+            If a directory is provided, '/tokenizer.model' will be automatically appended.
         max_seq_len: Maximum sequence length for the model
         host: Host address to bind the server (default: 127.0.0.1)
         port: Port number to run the server (default: 5000)
         debug: Enable Flask debug mode (default: False)
     
     Example:
+        # Using directory path (tokenizer.model will be auto-appended)
+        python hemp_seed_app.py \
+            --ckpt_dir Meta-Llama-3-8B-Instruct/ \
+            --tokenizer_path Meta-Llama-3-8B-Instruct
+        
+        # Or using full file path
         python hemp_seed_app.py \
             --ckpt_dir Meta-Llama-3-8B-Instruct/ \
             --tokenizer_path Meta-Llama-3-8B-Instruct/tokenizer.model \
