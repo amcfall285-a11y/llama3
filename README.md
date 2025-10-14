@@ -30,9 +30,39 @@ This release includes model weights and starting code for pre-trained and instru
 
 This repository is a minimal example of loading Llama 3 models and running inference. For more detailed examples, see [llama-cookbook](https://github.com/facebookresearch/llama-recipes/).
 
+---
+
+## 🚀 Quick Launch (New!)
+
+**Can't get the app to launch?** We've made it super easy:
+
+```bash
+./quick_launch.sh
+```
+
+This single command will:
+- ✅ Check your Python installation
+- ✅ Install all dependencies automatically
+- ✅ Test your setup (no model files needed!)
+- ✅ Guide you through downloading models
+- ✅ Launch your chosen app
+
+**Troubleshooting?** Use these helpful tools:
+- `./check_setup.sh` - Diagnose setup issues
+- `python3 test_installation.py` - Test without model files
+- Read [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for solutions
+
+---
+
 ## 📚 Getting Started Guides
 
 **New to Llama 3?** Start here: **[GETTING_STARTED.md](GETTING_STARTED.md)** 🎯
+
+**Just want to launch the app?** Run this one command:
+```bash
+./quick_launch.sh
+```
+This interactive script handles everything: setup, testing, and launching! 🚀
 
 We've created comprehensive tutorials to help you build your first app:
 
@@ -42,6 +72,7 @@ We've created comprehensive tutorials to help you build your first app:
 - 📖 **[Full Tutorial](TUTORIAL.md)** - Comprehensive step-by-step guide to building apps
 - 📝 **[Examples Guide](EXAMPLES.md)** - Overview of all example applications
 - 🔧 **[Code Cheatsheet](CHEATSHEET.md)** - Quick reference for common patterns
+- 🆘 **[Troubleshooting](TROUBLESHOOTING.md)** - Solutions to common problems
 
 **Example Applications:**
 - `my_first_app.py` - Simple story generator
