@@ -92,6 +92,23 @@ huggingface-cli download meta-llama/Meta-Llama-3-8B-Instruct --include "original
 
 You can follow the steps below to get up and running with Llama 3 models quickly. These steps will let you run quick inference locally. For more examples, see the [Llama Cookbook repository](https://github.com/facebookresearch/llama-recipes).
 
+### ⚡ New: Can't Launch? Start Here!
+
+Having trouble getting started? We've created helpful tools:
+
+```bash
+# 1. Check your setup (identifies issues automatically)
+./check_setup.sh
+
+# 2. Test your installation (works WITHOUT model files!)
+python3 test_installation.py
+
+# 3. Having issues? See the troubleshooting guide
+# Read TROUBLESHOOTING.md for detailed solutions
+```
+
+### Standard Installation Steps
+
 1. Clone and download this repository in a conda env with PyTorch / CUDA.
 
 2. In the top-level directory run:
