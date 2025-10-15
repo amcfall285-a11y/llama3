@@ -4,9 +4,10 @@ This directory contains VS Code launch configurations that allow you to easily r
 
 ## 📖 Documentation
 
-- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Comprehensive guide with tips, tricks, and examples
-- **launch.json** - Launch configurations for all apps
-- **This README** - Quick overview
+- **[VISUAL_GUIDE.md](VISUAL_GUIDE.md)** - 🎨 Visual guide with diagrams and workflows
+- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - 📋 Comprehensive reference with tips and examples
+- **launch.json** - ⚙️ Launch configurations for all apps
+- **This README** - 📝 Quick overview
 
 ## How to Use
 
