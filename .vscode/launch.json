@@ -1,0 +1,104 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Story Generator (my_first_app.py)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "torch.distributed.run",
+            "args": [
+                "--nproc_per_node",
+                "1",
+                "my_first_app.py",
+                "--ckpt_dir",
+                "Meta-Llama-3-8B-Instruct/",
+                "--tokenizer_path",
+                "Meta-Llama-3-8B-Instruct/tokenizer.model",
+                "--topic",
+                "a brave knight"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Interactive Chatbot",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "torch.distributed.run",
+            "args": [
+                "--nproc_per_node",
+                "1",
+                "interactive_chatbot.py",
+                "--ckpt_dir",
+                "Meta-Llama-3-8B-Instruct/",
+                "--tokenizer_path",
+                "Meta-Llama-3-8B-Instruct/tokenizer.model"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Chat Completion Example",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "torch.distributed.run",
+            "args": [
+                "--nproc_per_node",
+                "1",
+                "example_chat_completion.py",
+                "--ckpt_dir",
+                "Meta-Llama-3-8B-Instruct/",
+                "--tokenizer_path",
+                "Meta-Llama-3-8B-Instruct/tokenizer.model",
+                "--max_seq_len",
+                "512",
+                "--max_batch_size",
+                "6"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Text Completion Example",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "torch.distributed.run",
+            "args": [
+                "--nproc_per_node",
+                "1",
+                "example_text_completion.py",
+                "--ckpt_dir",
+                "Meta-Llama-3-8B-Instruct/",
+                "--tokenizer_path",
+                "Meta-Llama-3-8B-Instruct/tokenizer.model",
+                "--max_seq_len",
+                "128",
+                "--max_batch_size",
+                "4"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Hemp Seed Web App",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/hemp_seed_app.py",
+            "args": [
+                "--ckpt_dir",
+                "Meta-Llama-3-8B-Instruct/",
+                "--tokenizer_path",
+                "Meta-Llama-3-8B-Instruct/tokenizer.model",
+                "--port",
+                "5000"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
