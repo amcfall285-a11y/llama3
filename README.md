@@ -109,13 +109,19 @@ You can follow the steps below to get up and running with Llama 3 models quickly
 
 6. Once the model/s you want have been downloaded, you can run the model locally.
 
-**Option A: Use the Easy Launcher (Recommended)**
+**Option A: Use VS Code (Easiest for Development)**
+```bash
+code .  # Open project in VS Code
+```
+Press `F5` or click Run, then select an app from the dropdown. Pre-configured launch settings are in `.vscode/launch.json`. See [LAUNCH.md](LAUNCH.md) for details.
+
+**Option B: Use the Easy Launcher**
 ```bash
 ./launch_app.sh
 ```
 The launcher script will guide you through choosing an app and configuring settings. See [LAUNCH.md](LAUNCH.md) for details.
 
-**Option B: Manual Launch**
+**Option C: Manual Launch**
 ```bash
 torchrun --nproc_per_node 1 example_chat_completion.py \
     --ckpt_dir Meta-Llama-3-8B-Instruct/ \
