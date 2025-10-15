@@ -67,6 +67,19 @@ For experienced developers:
 
 ## 🔨 Example Applications
 
+### Launching Apps
+
+**Option 1: VS Code (Recommended for Development)** ⚡  
+Press `F5` in VS Code and select an app from the dropdown. See [LAUNCH.md](LAUNCH.md) for details.
+
+**Option 2: Launcher Script** 🚀  
+Run `./launch_app.sh` and follow the prompts.
+
+**Option 3: Command Line** 💻  
+Use `torchrun` directly (examples below).
+
+---
+
 ### my_first_app.py - Story Generator
 **What it does:** Generates creative stories based on topics  
 **Best for:** Understanding basic Llama 3 usage  
