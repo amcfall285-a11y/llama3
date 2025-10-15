@@ -2,6 +2,12 @@
 
 This directory contains VS Code launch configurations that allow you to easily run and debug Llama 3 applications directly from VS Code.
 
+## 📖 Documentation
+
+- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Comprehensive guide with tips, tricks, and examples
+- **launch.json** - Launch configurations for all apps
+- **This README** - Quick overview
+
 ## How to Use
 
 1. **Open the project in VS Code**
